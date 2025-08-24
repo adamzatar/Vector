@@ -1,0 +1,46 @@
+//
+//  Release.xcconfig
+//  Vector
+//
+//  Created by Adam Zaatar on 8/22/25.
+//  File: Config/Release.xcconfig
+//  Vector – Release configuration
+//
+
+
+// --- Project identity ---
+PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.vector
+MARKETING_VERSION = 0.1.0
+CURRENT_PROJECT_VERSION = 1
+INFOPLIST_FILE = App/Info.plist
+
+// --- Platforms ---
+SDKROOT = iphoneos
+IPHONEOS_DEPLOYMENT_TARGET = 17.0
+
+// --- Swift ---
+SWIFT_VERSION = 6.0
+SWIFT_STRICT_CONCURRENCY = complete
+SWIFT_ENFORCE_EXCLUSIVE_ACCESS = on
+OTHER_SWIFT_FLAGS = -warnings-as-errors
+SWIFT_OPTIMIZATION_LEVEL = -Osize
+SWIFT_COMPILATION_MODE = wholemodule
+
+// --- Obj-C/Clang warnings hygiene ---
+CLANG_WARN_DOCUMENTATION_COMMENTS = YES
+CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES
+GCC_TREAT_WARNINGS_AS_ERRORS = NO
+
+// --- Linking / stripping ---
+DEAD_CODE_STRIPPING = YES
+
+// --- Assets ---
+ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES
+
+// --- Code signing (adjust team) ---
+CODE_SIGN_STYLE = Automatic
+DEVELOPMENT_TEAM =
+
+// --- Misc perf/dev ---
+ENABLE_TESTABILITY = NO
+MTL_ENABLE_DEBUG_INFO = NO

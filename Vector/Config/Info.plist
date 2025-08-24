@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Identity (kept in sync with .xcconfig via Build Settings) -->
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    <key>CFBundleDisplayName</key>
+    <string>Vector</string>
+    <key>CFBundleShortVersionString</key>
+    <string>$(MARKETING_VERSION)</string>
+    <key>CFBundleVersion</key>
+    <string>$(CURRENT_PROJECT_VERSION)</string>
+
+    <!-- Platform -->
+    <key>MinimumOSVersion</key>
+    <string>$(IPHONEOS_DEPLOYMENT_TARGET)</string>
+    <key>UIRequiresFullScreen</key>
+    <false/>
+
+    <!-- Appearance -->
+    <key>UIUserInterfaceStyle</key>
+    <string>Automatic</string>
+    <key>UIStatusBarStyle</key>
+    <string>UIStatusBarStyleDefault</string>
+
+    <!-- Supported orientations (iPhone) -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    <!-- (Optional for iPad support later)
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    -->
+
+    <!-- Launch Screen (static) -->
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+
+    <!-- Privacy: permission copy -->
+    <key>NSCameraUsageDescription</key>
+    <string>Scan 2FA QR codes.</string>
+    <key>NSFaceIDUsageDescription</key>
+    <string>Unlock your encrypted vault.</string>
+
+    <!-- Export compliance: using only Apple-provided crypto -->
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
+
+    <!-- App Transport Security: default secure settings (no exceptions). -->
+    <!-- <key>NSAppTransportSecurity</key><dict/> -->
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+</dict>
+</plist>

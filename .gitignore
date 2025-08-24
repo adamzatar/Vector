@@ -1,0 +1,26 @@
+# SwiftPM / Vapor
+.build/
+.swiftpm/
+Packages/
+
+# Xcode
+.DS_Store
+DerivedData/
+
+# SQLite dev db
+vector.sqlite*
+*.db
+*.db-shm
+*.db-wal
+
+# Env & secrets
+.env
+
+# NOTE:
+# We keep a placeholder at Sources/App/Config/apns-auth-key.p8 tracked in git
+# so builds don’t fail. Do NOT paste real keys into it—use the placeholder only.
+# If you ever add real keys elsewhere, ignore them explicitly.
+*.p12
+*.pem
+*.key
+*.p8.bak

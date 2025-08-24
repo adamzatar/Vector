@@ -1,0 +1,6 @@
+.env
+vector.sqlite*
+Sources/App/Config/apns-auth-key.p8
+.env
+vector.sqlite*
+Sources/App/Config/apns-auth-key.p8
