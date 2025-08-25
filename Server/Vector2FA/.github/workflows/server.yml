@@ -1,0 +1,28 @@
+name: Server CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Swift
+        uses: swift-actions/setup-swift@v1
+        with:
+          swift-version: "5.9"
+
+      - name: Run sanity checks
+        run: ./Server/Vector2FA/Scripts/sanity.sh
+
+      - name: Build (debug)
+        run: swift build --package-path Server/Vector2FA
+
+      - name: Run tests
+        run: swift test --package-path Server/Vector2FA --enable-test-discovery --parallel
